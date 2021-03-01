@@ -16,7 +16,7 @@ with sq.connect('out/ac_address.db') as con:
         )
         """)
 
-a_file = open('out/new_output10.csv')
+a_file = open('out/new_output11.csv')
 rows = csv.reader(a_file)
 cur.executemany("INSERT INTO ac_address VALUES (?,?,?,?,?,?,?)",rows)
 
